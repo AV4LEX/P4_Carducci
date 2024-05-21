@@ -1,0 +1,104 @@
+//----------------------------------------------//
+//                                              //
+//              Audit Lighthouse                //
+//                                              //
+//----------------------------------------------//
+
+
+//ROAD MAP POUR L'OPTIMISATION DU SITE CARDUCCI 
+
+//Ce rapport contient les éléments affaiblissant les performances du site
+//Ces éléments sont triés par ordre de priorité.
+
+
+/*-------------------------------------------------------------------------------*/
+/                        ACTIONS MAJEURES PRIORITAIRES                            /
+/*-------------------------------------------------------------------------------*/
+
+
+ACTION 1
+
+Éliminez les ressources qui bloquent le rendu Économies potentielles de 440 ms
+Des ressources bloquent la première visualisation (first paint). Envisagez de diffuser des feuilles JS/CSS essentielles en ligne et de différer la diffusion de toutes les feuilles JS/de style non essentielles.
+
+
+
+ACTION 2
+
+Dimensionnez correctement les images Économies potentielles de 22 286 Kio
+Diffusez des images de taille appropriée afin d'économiser des données mobiles et de réduire le temps de chargement.
+
+
+
+ACTION 3
+
+Réduisez les ressources CSS inutilisées Économies potentielles de 25 Kio
+Réduisez les règles inutilisées des feuilles de style et différez les ressources CSS non utilisées pour le contenu au-dessus de la ligne de flottaison afin de réduire la quantité d'octets consommés par l'activité réseau.
+
+
+
+ACTION 4
+
+Réduisez les ressources JavaScript inutilisées Économies potentielles de 31 Kio
+Réduisez les ressources JavaScript inutilisées et différez le chargement des scripts tant qu'ils ne sont pas requis afin de réduire la quantité d'octets consommés par l'activité réseau.
+
+
+
+ACTION 5
+
+Encodez les images de manière efficace Économies potentielles de 1 955 Kio
+Les images optimisées se chargent plus rapidement et consomment moins de données mobiles.
+
+
+
+ACTION 6
+
+Diffusez des images aux formats nouvelle génération Économies potentielles de 9 039 Kio
+Les formats d'image comme WebP et AVIF proposent souvent une meilleure compression que PNG et JPEG. Par conséquent, les téléchargements sont plus rapides et la consommation de données est réduite.
+
+
+ACTION 7
+
+
+Élément identifié comme "Largest Contentful Paint" 11 730 ms
+Il s'agit de l'élément identifié comme "Largest Contentful Paint" dans la fenêtre d'affichage.
+
+
+
+/*-------------------------------------------------------------------------------*/
+/                        ACTIONS MINEURES PRIORITAIRES                            /
+/*-------------------------------------------------------------------------------*/
+
+
+ACTION 1
+
+Réduisez la taille des ressources CSS Économies potentielles de 5 Kio
+La minimisation des fichiers CSS peut réduire la taille des charges utiles de réseau.
+
+
+
+ACTION 2
+
+Réduisez la taille des ressources JavaScript Économies potentielles de 16 Kio
+La minimisation des fichiers JavaScript peut réduire la taille des charges utiles et la durée d'analyse des scripts.
+
+
+
+ACTION 3
+
+Évitez d'énormes charges utiles de réseau La taille totale était de 30 350 Kio
+Les charges utiles des grands réseaux coûtent de l'argent réel aux utilisateurs et sont fortement corrélées aux délais de chargement interminables.
+
+
+
+ACTION 4
+
+Diffusez des éléments statiques grâce à des règles de cache efficaces 20 ressources trouvées
+Une longue durée de vie du cache peut accélérer les visites répétées sur votre page.
+
+
+
+ACTION 5
+
+Les éléments d'image ne possèdent pas de width ni de height explicites
+Indiquez une largeur et une hauteur explicites sur les éléments d'image afin de réduire les décalages de mise en page et d'améliorer le CLS..
